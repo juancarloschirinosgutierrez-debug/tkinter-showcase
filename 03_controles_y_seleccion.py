@@ -274,7 +274,7 @@ def main() -> None:
         frame_controles_list, text="- Quitar", font=fuente_normal, bg="#E74C3C", fg="white",
         relief=tk.FLAT, padx=8, command=eliminar_item, cursor="hand2"
     )
-    btn_del.pack(side=tk.LEFT, cursor="hand2")
+    btn_del.pack(side=tk.LEFT)
 
     listbox.bind("<<ListboxSelect>>", lambda e: actualizar_resumen())
 
